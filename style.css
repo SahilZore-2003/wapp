@@ -32,7 +32,7 @@
 .topfixed{
     background-color: var(--green);
     color: var(--white);
-    padding: 1rem .5rem;
+    padding: 1rem .9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,4 +52,65 @@
 
 i{
     font-size: 1.2rem;
+}
+
+.bottomfixed{
+    position: fixed;
+    bottom: .5rem;
+    width: 100%;
+}
+
+.bottomfixed .inputsection input{
+    border-radius: 18px;
+    padding: .9rem 0rem .9rem 3rem;
+    background-color: white;
+    outline-style: none;
+    border: none;
+    font-size: 1.3rem;
+    caret-color: #017a6b;
+
+}
+
+.inputsection{
+    display: flex;
+    gap: 10px;
+}
+
+.inputsection input{
+    flex-basis: 90%;
+}
+
+.inputsection button{
+    background-color: #017a6b;
+    color: var(--white);
+    padding: .9rem;
+    border-radius: 50%;
+    outline-style: none;
+    border: none;
+}
+
+#smile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--grey);
+    font-size: 1.8rem;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.righticons{
+    position: absolute;
+    right: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.righticons i{
+    font-size: 1.6rem;
+    color: var(--grey);
 }
