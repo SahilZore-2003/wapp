@@ -12,8 +12,8 @@ function importData() {
     input.onchange = _ => {
       // you can use this method to get file and perform respective operations
               let files =   Array.from(input.files);
-              let address = files[0].name;
-            //   logo.src = `${address}`;
+              
+              logo.src = URL.createObjectURL(files[0]);
               
           };
     input.click();
