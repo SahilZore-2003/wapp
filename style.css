@@ -114,3 +114,7 @@ i{
     font-size: 1.6rem;
     color: var(--grey);
 }
+
+.righticons i{
+    transition: .2s linear;
+}
