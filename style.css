@@ -130,7 +130,7 @@ i{
 
 .messages{
     padding-top: 80px;
-    height: calc(100vh - 55px);
+    min-height: 100vh;
     overflow-y:scroll ;
 }
 
