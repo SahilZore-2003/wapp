@@ -3,7 +3,9 @@ let logo = document.getElementById('logo');
 let input = document.getElementById('input');
 let rupee = document.getElementById('rupee');
 let camera = document.getElementById('camera');
-let sendbtn = document.getElementById('sendbtn');
+let send = document.getElementById('send');
+let msgcontainer = document.getElementById('msgcontainer');
+let link = document.getElementById('smile');
 
 name.addEventListener('click', () => {
   let username = prompt("enter user name")
@@ -37,12 +39,27 @@ input.addEventListener('blur',()=>{
   camera.style.display = "block"
 })
 
-// input.addEventListener('keyup',()=>{
-//   if(input.value =="" || input.value == null){
-//     sendbtn.classList.add('fa-microphone')
-//     sendbtn.classList.remove('fa-paper-plane-top')
-//   }else{
-//     sendbtn.classList.remove('fa-microphone')
-//     sendbtn.classList.add('fa-paper-plane-top')
-//   }
-// })
+
+send.addEventListener("click",()=>{
+  let msg = input.value;
+ let msgdiv = document.createElement('div');
+ msgdiv.innerText = msg;
+ msgdiv.classList.add('send');
+msgcontainer.appendChild(msgdiv);
+input.value = "";
+input.focus();
+  
+})
+
+link.addEventListener("click",()=>{
+ let msg = input.value;
+ let msgdiv = document.createElement('div');
+ msgdiv.innerText = msg;
+ msgdiv.classList.add('receive');
+msgcontainer.appendChild(msgdiv);
+input.value = "";
+input.focus();
+  
+})
+
+console.log(link)
