@@ -142,7 +142,7 @@ i{
     background-color: var(--light-green);
     padding: 10px 15px;
     font-weight: 580;
-    margin: 5px;
+    margin: 10px;
     float: right;
     clear: both;
     
@@ -155,7 +155,7 @@ i{
     background-color: var(--white);
     padding: 10px 15px;
     font-weight: 580;
-    margin: 5px;
+    margin: 10px;
     float: left;
     clear: both;
     
